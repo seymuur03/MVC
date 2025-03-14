@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\02.03.2025 (Partial View)\\PartialView\\",
+  "WorkspaceRootPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\02.03.2025 (partial view)\\partialview\\partialview.pustok\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\partialview\\partialview.pustok\\wwwroot\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\wwwroot\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\02.03.2025 (partial view)\\partialview\\partialview.pustok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\partialview\\partialview.pustok\\views\\shared\\_modalbookpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\views\\shared\\_modalbookpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\02.03.2025 (partial view)\\partialview\\partialview.pustok\\data\\pustokdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\data\\pustokdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\partialview\\partialview.pustok\\views\\shared\\_bookspartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\views\\shared\\_bookspartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\partialview\\partialview.pustok\\views\\book\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\views\\book\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\partialview\\partialview.pustok\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\partialview\\partialview.pustok\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +34,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ModalBookPartialView.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\Views\\Shared\\_ModalBookPartialView.cshtml",
+              "RelativeDocumentMoniker": "PartialView.pustok\\Views\\Shared\\_ModalBookPartialView.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\Views\\Shared\\_ModalBookPartialView.cshtml",
+              "RelativeToolTip": "PartialView.pustok\\Views\\Shared\\_ModalBookPartialView.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T16:26:31.497Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\02.03.2025 (Partial View)\\PartialView\\PartialView.pustok\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "PartialView.pustok\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\02.03.2025 (Partial View)\\PartialView\\PartialView.pustok\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "PartialView.pustok\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\wwwroot\\assets\\js\\main.js",
+              "RelativeDocumentMoniker": "PartialView.pustok\\wwwroot\\assets\\js\\main.js",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\wwwroot\\assets\\js\\main.js",
+              "RelativeToolTip": "PartialView.pustok\\wwwroot\\assets\\js\\main.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-14T16:06:08.462Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\Views\\Book\\Detail.cshtml",
+              "RelativeDocumentMoniker": "PartialView.pustok\\Views\\Book\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\Views\\Book\\Detail.cshtml",
+              "RelativeToolTip": "PartialView.pustok\\Views\\Book\\Detail.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAD8AAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T16:35:08.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "PartialView.pustok\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\Controllers\\BookController.cs",
+              "RelativeToolTip": "PartialView.pustok\\Controllers\\BookController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAYwCMAAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T06:53:18.937Z",
+              "WhenOpened": "2025-03-14T16:17:47.749Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PustokDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\02.03.2025 (Partial View)\\PartialView\\PartialView.pustok\\DATA\\PustokDbContext.cs",
-              "RelativeDocumentMoniker": "PartialView.pustok\\DATA\\PustokDbContext.cs",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\02.03.2025 (Partial View)\\PartialView\\PartialView.pustok\\DATA\\PustokDbContext.cs",
-              "RelativeToolTip": "PartialView.pustok\\DATA\\PustokDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T06:47:39.599Z",
+              "Title": "_BooksPartialView.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\Views\\Shared\\_BooksPartialView.cshtml",
+              "RelativeDocumentMoniker": "PartialView.pustok\\Views\\Shared\\_BooksPartialView.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\Views\\Shared\\_BooksPartialView.cshtml",
+              "RelativeToolTip": "PartialView.pustok\\Views\\Shared\\_BooksPartialView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T16:03:38.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\02.03.2025 (Partial View)\\PartialView\\PartialView.pustok\\Program.cs",
-              "RelativeDocumentMoniker": "PartialView.pustok\\Program.cs",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\02.03.2025 (Partial View)\\PartialView\\PartialView.pustok\\Program.cs",
-              "RelativeToolTip": "PartialView.pustok\\Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwA8AAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T06:46:05.013Z",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PartialView.pustok\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\PartialView\\PartialView.pustok\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PartialView.pustok\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEMDAAAAAAAAAAApwFcDAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T16:06:19.725Z",
               "EditorCaption": ""
             }
           ]
