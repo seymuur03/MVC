@@ -1,0 +1,13 @@
+﻿@model Genre
+<div class="container">
+    <div class="row justify-content-center">
+       <div>Genre Id : <strong>@Model.Id</strong</div> 
+       <div>Genre Name : <strong>@Model.Name</strong> </div>
+       <div>Genre Books Count : <strong>@Model.Books.Count</strong>  </div>
+       <div>Genre Created Date : <strong>@Model.CreatedDate</strong>  </div>
+       <div>Genre Updated Date : <strong>@Model.UpdateDate</strong> </div>
+    </div>
+    <div class="btn btn-outline-primary">
+        <a asp-controller="genre" asp-action="index">Go Back</a>
+    </div>
+</div>
