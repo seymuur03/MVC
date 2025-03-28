@@ -1,0 +1,116 @@
+﻿@model PaginatedList<Slider>
+@{
+    int count = 1;
+}
+<table class="table">
+    <a class="btn btn-success" asp-action="create" asp-controller="slider">
+        Create
+    </a>
+    <thead>
+        <tr>
+            <th scope="col">Count</th>
+            <th scope="col">Image Name</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Button Link</th>
+            <th scope="col">Button Text</th>
+            <th scope="col">Order</th>
+            <th scope="col">Created_Date</th>
+            <th scope="col">Updated_Date</th>
+            <th scope="col">Settings</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var slider in Model)
+        {
+            <tr>
+                <th>@count</th>
+                <td>
+                    <img width="150" height="150" src="~/assets/image//bg-images/@slider.ImgName" alt="" />
+                </td>
+                <td>@slider.Name</td>
+                <td>@slider.Desc</td>
+                <td>@slider.ButtonLink</td>
+                <td>@slider.ButtonText</td>
+                <td>@slider.Order</td>
+                <td>@slider.CreatedDate.ToString("MM dddd,yyyy")</td>
+                <td>@slider.UpdateDate?.ToString("MM dddd,yyyy")</td>
+                <td>
+                    <a class="btn btn-primary" asp-action="edit" asp-controller="slider" asp-route-id="@slider.Id">
+                        Edit
+                    </a>
+                    <a class="btn btn-primary" asp-action="detail" asp-controller="slider" asp-route-id="@slider.Id">
+                        Details
+                    </a>
+                    <a asp-action="delete" asp-controller="slider" asp-route-id="@slider.Id" class="btn btn-danger deleteslider">
+                        Delete
+                    </a>
+                </td>
+
+            </tr>
+            count++;
+        }
+    </tbody>
+</table>
+
+
+<nav aria-label="...">
+    <ul class="pagination justify-content-center">
+        <li class="page-item @(Model.HasPrevious?"":"disabled")">
+            @* @(ViewBag.currentPage==1?"disabled":"") hec hasprevious propertysi teyin elemeden de bele bir sey yazmaq olardi *@
+            <a class="page-link" asp-action="index" asp-controller="slider" asp-route-page="@(Model.CurentPage-1)" tabindex="-1">Previous</a>
+        </li>
+
+        @for (int i = Model.First; i <= Model.Last; i++)
+        {
+            <li class="page-item @(Model.CurentPage==@i?"disabled":"")"><a class="page-link  " asp-action="index" asp-route-page="@i">@i</a></li>
+        }
+
+        <li class="page-item @(Model.HasNext?"":"disabled")">
+            @* @(ViewBag.currentPage==ViewBag.pageCount?"disabled":"") buda hasNext olmadan yazilis *@
+            <a class="page-link" asp-action="index" asp-controller="slider" asp-route-page="@(Model.CurentPage+1)">Next</a>
+        </li>
+    </ul>
+</nav>
+
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('.deleteslider').on('click', function (e) {
+                e.preventDefault();
+                Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, delete it!"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        var url = $(this).attr('href');
+                        fetch(url).then(response => {
+                            if (response.ok) {
+                                Swal.fire({
+                                    title: "Deleted!",
+                                    text: "Your file has been deleted.",
+                                    icon: "success"
+                                });
+                                window.location.reload();
+                            } else {
+                                Swal.fire({
+                                    icon: "error",
+                                    title: "Oops...",
+                                    text: "Something went wrong!",
+                                });
+                            }
+                        })
+
+
+                    }
+                });
+            })
+        })
+    </script>
+}

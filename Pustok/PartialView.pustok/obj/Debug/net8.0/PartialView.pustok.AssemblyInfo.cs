@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PartialView.pustok")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23ea448e15bc4eaa4539fa18a2f2d977fa53a1d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f714e3953b89a2d062df7ca095a89c40a4f07089")]
 [assembly: System.Reflection.AssemblyProductAttribute("PartialView.pustok")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PartialView.pustok")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

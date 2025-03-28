@@ -42,7 +42,7 @@ namespace PartialView.pustok.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Authors", (string)null);
+                    b.ToTable("Authors");
                 });
 
             modelBuilder.Entity("PartialView.pustok.Models.Book", b =>
@@ -98,7 +98,7 @@ namespace PartialView.pustok.Migrations
 
                     b.HasIndex("GenreId");
 
-                    b.ToTable("Books", (string)null);
+                    b.ToTable("Books");
                 });
 
             modelBuilder.Entity("PartialView.pustok.Models.BookImage", b =>
@@ -129,7 +129,7 @@ namespace PartialView.pustok.Migrations
 
                     b.HasIndex("BookId");
 
-                    b.ToTable("BookImages", (string)null);
+                    b.ToTable("BookImages");
                 });
 
             modelBuilder.Entity("PartialView.pustok.Models.BookTag", b =>
@@ -140,11 +140,20 @@ namespace PartialView.pustok.Migrations
                     b.Property<int>("TagId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("BookId", "TagId");
 
                     b.HasIndex("TagId");
 
-                    b.ToTable("BookTags", (string)null);
+                    b.ToTable("BookTags");
                 });
 
             modelBuilder.Entity("PartialView.pustok.Models.Feature", b =>
@@ -175,7 +184,7 @@ namespace PartialView.pustok.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Features", (string)null);
+                    b.ToTable("Features");
                 });
 
             modelBuilder.Entity("PartialView.pustok.Models.Genre", b =>
@@ -198,7 +207,7 @@ namespace PartialView.pustok.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genres", (string)null);
+                    b.ToTable("Genres");
                 });
 
             modelBuilder.Entity("PartialView.pustok.Models.Setting", b =>
@@ -211,7 +220,7 @@ namespace PartialView.pustok.Migrations
 
                     b.HasKey("Key");
 
-                    b.ToTable("Settings", (string)null);
+                    b.ToTable("Settings");
                 });
 
             modelBuilder.Entity("PartialView.pustok.Models.Slider", b =>
@@ -223,21 +232,26 @@ namespace PartialView.pustok.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ButtonLink")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ButtonText")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Desc")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImgName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Order")
@@ -248,7 +262,7 @@ namespace PartialView.pustok.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sliders", (string)null);
+                    b.ToTable("Sliders");
                 });
 
             modelBuilder.Entity("PartialView.pustok.Models.Tag", b =>
@@ -272,7 +286,7 @@ namespace PartialView.pustok.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tags", (string)null);
+                    b.ToTable("Tags");
                 });
 
             modelBuilder.Entity("PartialView.pustok.Models.Book", b =>

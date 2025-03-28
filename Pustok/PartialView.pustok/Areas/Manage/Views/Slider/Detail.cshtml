@@ -1,0 +1,18 @@
+﻿@model Slider
+<div class="container">
+    <div class="row justify-content-center">
+       <div>Slider Id : <strong>@Model.Id</strong</div> 
+       <div>Slider Image Name : <strong>@Model.ImgName</strong</div> 
+       <div>Slider Image : <img width="150" height="150" src="~/assets/image//bg-images/@Model.ImgName" alt="" /> </div> 
+       <div>Slider Name : <strong>@Model.Name</strong> </div>
+       <div>Slider Description : <strong>@Model.Desc</strong> </div>
+       <div>Slider ButtonLink : <strong>@Model.ButtonLink</strong> </div>
+       <div>Slider ButtonText : <strong>@Model.ButtonText</strong> </div>
+       <div>Slider Order : <strong>@Model.Order</strong> </div>
+       <div>Slider Created Date : <strong>@Model.CreatedDate</strong>  </div>
+       <div>Slider Updated Date : <strong>@Model.UpdateDate</strong> </div>
+    </div>
+    <div class="btn btn-outline-primary">
+        <a asp-controller="Slider" asp-action="index">Go Back</a>
+    </div>
+</div>
