@@ -17,6 +17,7 @@ namespace PartialView.pustok
                 options.UseSqlServer("Server=DESKTOP-Q4CUAVA\\SQLEXPRESS;Database=PustokDb;Trusted_Connection=True;TrustServerCertificate=True;");
             });
             builder.Services.AddScoped<LayoutService>();
+            builder.Services.Configure<IOptionPatternService>(builder.Configuration.GetSection("IoptionPattern"));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

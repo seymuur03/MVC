@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.VisualBasic.FileIO;
 using PartialView.pustok.DATA;
 using PartialView.pustok.Helpers;
 using PartialView.pustok.Models;
+using PartialView.pustok.Services;
 
 namespace PartialView.pustok.Areas.Manage.Controllers
 {
@@ -15,10 +17,12 @@ namespace PartialView.pustok.Areas.Manage.Controllers
 
         private readonly PustokDbContext _pustokDbContext;
         private readonly IWebHostEnvironment _webHostEnvironment;
-        public SliderController(PustokDbContext pustokDbContext, IWebHostEnvironment webHostEnvironment)
+        private readonly IOptionPatternService _optionPatternService;
+        public SliderController(PustokDbContext pustokDbContext, IWebHostEnvironment webHostEnvironment,IOptionsSnapshot<IOptionPatternService>options)
         {
             _pustokDbContext = pustokDbContext;
             _webHostEnvironment = webHostEnvironment;
+            _optionPatternService = options.Value;
         }
 
 
@@ -137,6 +141,16 @@ namespace PartialView.pustok.Areas.Manage.Controllers
             if (slider == null)
                 return NotFound();
             return View(slider);
+        }
+        public IActionResult ReadData()
+        {
+            var d1 = _optionPatternService.Key;
+            var d2 = _optionPatternService.Issuer;
+            return Json(new
+            {
+                Key = d1,
+                Issuer = d2
+            });
         }
     }
 }
