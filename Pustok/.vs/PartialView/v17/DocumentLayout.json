@@ -1,89 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\areas\\manage\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\areas\\manage\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\services\\ioptionpatternservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\services\\ioptionpatternservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SliderController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Areas\\Manage\\Controllers\\SliderController.cs",
-              "RelativeDocumentMoniker": "PartialView.pustok\\Areas\\Manage\\Controllers\\SliderController.cs",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Areas\\Manage\\Controllers\\SliderController.cs",
-              "RelativeToolTip": "PartialView.pustok\\Areas\\Manage\\Controllers\\SliderController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABQAAAB4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T09:31:51.161Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Program.cs",
-              "RelativeDocumentMoniker": "PartialView.pustok\\Program.cs",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Program.cs",
-              "RelativeToolTip": "PartialView.pustok\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAByAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T08:08:33.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IOptionPatternService.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Services\\IOptionPatternService.cs",
-              "RelativeDocumentMoniker": "PartialView.pustok\\Services\\IOptionPatternService.cs",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Services\\IOptionPatternService.cs",
-              "RelativeToolTip": "PartialView.pustok\\Services\\IOptionPatternService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T08:08:07.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\appsettings.json",
-              "RelativeDocumentMoniker": "PartialView.pustok\\appsettings.json",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\appsettings.json",
-              "RelativeToolTip": "PartialView.pustok\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-29T08:03:01.217Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

@@ -1,5 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using PartialView.pustok.Areas.Manage.Attributes;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using LengthAttribute = PartialView.pustok.Areas.Manage.Attributes.LengthAttribute;
 
 namespace PartialView.pustok.Models
 {
@@ -18,6 +20,8 @@ namespace PartialView.pustok.Models
         [Required]
         public int Order { get; set; }
         [NotMapped]
+        [TypeAttribute("image/png","image/jpeg")]
+        [LengthAttribute(2*1024*1024)]
         public IFormFile Photo { get; set; }
     }
 }

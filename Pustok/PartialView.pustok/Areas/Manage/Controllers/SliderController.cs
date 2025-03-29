@@ -67,16 +67,16 @@ namespace PartialView.pustok.Areas.Manage.Controllers
                 return View();
             }
             var file = slider.Photo;
-            if (file.ContentType != "image/jpeg" && file.ContentType != "image/png")
-            {
-                ModelState.AddModelError("Photo", "File's type is not correct");
-                return View();
-            }
-            if (file.Length > 3 * 1024 * 1024)
-            {
-                ModelState.AddModelError("Photo", "File's length so big");
-                return View();
-            }
+            //if (file.ContentType != "image/jpeg" && file.ContentType != "image/png")
+            //{
+            //    ModelState.AddModelError("Photo", "File's type is not correct");
+            //    return View();
+            //}
+            //if (file.Length > 3 * 1024 * 1024)
+            //{
+            //    ModelState.AddModelError("Photo", "File's length so big");
+            //    return View();
+            //}
 
             slider.ImgName = file.SaveImage(_webHostEnvironment.WebRootPath, "assets/image/bg-images");
             if (slider.ImgName == null)
@@ -110,16 +110,16 @@ namespace PartialView.pustok.Areas.Manage.Controllers
             var oldImageName = existSlider.ImgName;
             if (file is not null)
             {
-                if (file.ContentType != "image/jpeg" && file.ContentType != "image/png")
-                {
-                    ModelState.AddModelError("Photo", "File's type is not correct");
-                    return View();
-                }
-                if (file.Length > 3 * 1024 * 1024)
-                {
-                    ModelState.AddModelError("Photo", "File's length so big");
-                    return View();
-                }
+                //if (file.ContentType != "image/jpeg" && file.ContentType != "image/png")
+                //{
+                //    ModelState.AddModelError("Photo", "File's type is not correct");
+                //    return View();
+                //}
+                //if (file.Length > 3 * 1024 * 1024)
+                //{
+                //    ModelState.AddModelError("Photo", "File's length so big");
+                //    return View();
+                //}
                 existSlider.ImgName = file.SaveImage(_webHostEnvironment.WebRootPath, "assets/image/bg-images");
                 var deleteImagePath = Path.Combine(_webHostEnvironment.WebRootPath, "assets/image/bg-images",oldImageName);
                 FileManager.DeleteFile(deleteImagePath);    
