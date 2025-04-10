@@ -60,6 +60,7 @@ namespace PartialView.pustok.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Discount")
@@ -78,6 +79,7 @@ namespace PartialView.pustok.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("PCode")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
@@ -87,6 +89,7 @@ namespace PartialView.pustok.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UpdateDate")

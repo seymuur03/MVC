@@ -1,0 +1,109 @@
+﻿@model Book
+<div class="container">
+    <div class="row justify-content-center">
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Photos"></label>
+                <input asp-for="Photos" class="form-control">
+                <div id="ShowPhotoFrame" class="d-flex"> 
+                    @foreach (var bImg in Model.BookImages.Where(bi=>bi.Status==null))
+                    {
+                        <div>
+                            <input type="hidden" asp-for="ImgIds" value="@bImg.Id" />
+                            <img width="100px" src="~/assets/image/products/@bImg.ImgName" alt="" />
+                        </div>
+
+                       
+                    }
+                </div>
+                <span class="text-danger" asp-validation-for="Photos"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MainPhoto"></label>
+                <input asp-for="MainPhoto" class="form-control">
+                <img id="ShowImg" style="width:150px;height=100px" src="~/assets/image/products/@Model.BookImages.FirstOrDefault(bi=>bi.Status==true).ImgName" alt="" />
+                <img style="width:150px;height=100px" id="ShowImg" src="" alt="" />
+                <span class="text-danger" asp-validation-for="MainPhoto"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="HoverPhoto"></label>
+                <input asp-for="HoverPhoto" class="form-control">
+                <img id="ShowImg" style="width:150px;height=100px" src="~/assets/image/products/@Model.BookImages.FirstOrDefault(bi=>bi.Status==false).ImgName" alt="" />
+                <img style="width:150px;height=100px" id="ShowImg" src="" alt="" />
+                <span class="text-danger" asp-validation-for="HoverPhoto"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Title"></label>
+                <input asp-for="Title" class="form-control">
+                <span class="text-danger" asp-validation-for="Title"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price"></label>
+                <input asp-for="Price" class="form-control">
+                <span class="text-danger" asp-validation-for="Price"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <input asp-for="Description" class="form-control">
+                <span class="text-danger" asp-validation-for="Description"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PCode"></label>
+                <input asp-for="PCode" class="form-control">
+                <span class="text-danger" asp-validation-for="PCode"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Discount"></label>
+                <input asp-for="Discount" class="form-control">
+                <span class="text-danger" asp-validation-for="Discount"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Rate"></label>
+                <input asp-for="Rate" class="form-control">
+                <span class="text-danger" asp-validation-for="Rate"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="GenreId">Genre Name :</label>
+                <select asp-for="GenreId" class="form-select" aria-label="Default select example" asp-items="@ViewBag.Genres">
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AuthorId">Author Name :</label>
+                <select asp-for="AuthorId" class="form-select" aria-label="Default select example" asp-items="@ViewBag.Authors">
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div>
+                    <label asp-for="InStock"></label>
+                    <input asp-for="InStock" class="form-control">
+                </div>
+                <div>
+                    <label asp-for="IsFeatured"></label>
+                    <input asp-for="IsFeatured" class="form-control">
+                </div>
+                <div>
+                    <label asp-for="IsNew"></label>
+                    <input asp-for="IsNew" class="form-control">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+@section scripts {
+    @Html.Partial("ValidationPartialView")
+}

@@ -6,7 +6,7 @@
                 <label asp-for="Photo"></label>
                 <input asp-for="Photo" class="form-control">
                 <input asp-for="ImgName" type="hidden"/>
-                <img style="width:150px;height=100px" src="~/assets/image/bg-images/@Model.ImgName" alt="" />
+                <img id="ShowImg" style="width:150px;height=100px" src="~/assets/image/bg-images/@Model.ImgName" alt="" />
                 <img style="width:150px;height=100px" id="ShowImg" src="" alt="" />
                 <span class="text-danger" asp-validation-for="Photo"></span>
             </div>

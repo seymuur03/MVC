@@ -12,13 +12,19 @@ namespace PartialView.pustok.Areas.Manage.Attributes
         }
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
+            List<IFormFile> _files = new List<IFormFile>();
+            if (value is List<IFormFile> files)
+                _files = files;
             if (value is IFormFile file)
+                _files.Add(file);
+            foreach (var _file in _files)
             {
-                if (!_types.Contains(file.ContentType))
+                if (!_types.Contains(_file.ContentType))
                 {
                     return new ValidationResult("File type is not suitable");
                 }
             }
+           
             return ValidationResult.Success ;
         }
     }

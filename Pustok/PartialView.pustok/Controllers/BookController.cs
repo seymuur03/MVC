@@ -23,7 +23,7 @@ namespace PartialView.pustok.Controllers
             BookDetailVm bookDetailVm = new BookDetailVm()
             {
                 Book = eBook,
-                RelatedBooks = _pustokDbContext.Books.Include(b => b.Author).Include(b => b.Genre).Include(b => b.BookImages).Include(b => b.BookImages).Include(b => b.BookTags).ThenInclude(bt => bt.Tag).Where(b => b.GenreId == eBook.GenreId || b.AuthorId == eBook.AuthorId).ToList(),
+                RelatedBooks = _pustokDbContext.Books.Include(b => b.Author).Include(b => b.Genre).Include(b => b.BookImages).Include(b => b.BookTags).ThenInclude(bt => bt.Tag).Where(b => b.GenreId == eBook.GenreId || b.AuthorId == eBook.AuthorId).ToList(),
             };
 
             return View(bookDetailVm);

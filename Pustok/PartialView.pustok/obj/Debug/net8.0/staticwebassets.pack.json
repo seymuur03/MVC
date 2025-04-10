@@ -121,10 +121,6 @@
       "PackagePath": "staticwebassets\\assets\\image\\bg-images\\2d584e1b-6c12-434a-9ae3-28f280d9f8ed.jpg"
     },
     {
-      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\bg-images\\49fcbe5f-5ab8-4285-aabc-2c22ba26e0a1.jpg",
-      "PackagePath": "staticwebassets\\assets\\image\\bg-images\\49fcbe5f-5ab8-4285-aabc-2c22ba26e0a1.jpg"
-    },
-    {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\bg-images\\best-seller-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\image\\bg-images\\best-seller-bg.jpg"
     },
@@ -345,6 +341,30 @@
       "PackagePath": "staticwebassets\\assets\\image\\others\\home-side-promo.jpg"
     },
     {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\338f308c-6ae2-4756-863d-dff327275d57.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\products\\338f308c-6ae2-4756-863d-dff327275d57.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\4fed4322-613b-4837-a23a-ccbf854681fe.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\products\\4fed4322-613b-4837-a23a-ccbf854681fe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\93beb8e2-f8ea-4757-93a0-e0b7e5c957f9.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\products\\93beb8e2-f8ea-4757-93a0-e0b7e5c957f9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\99d08bfd-95ba-45e6-8de2-61b15bdb5a25.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\products\\99d08bfd-95ba-45e6-8de2-61b15bdb5a25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\9da653c6-5455-4b6d-a66b-947ba2870271.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\products\\9da653c6-5455-4b6d-a66b-947ba2870271.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\c40fc9e2-013e-412e-bcba-76f1a4fd5ab6.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\products\\c40fc9e2-013e-412e-bcba-76f1a4fd5ab6.jpg"
+    },
+    {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\cart-product-1.jpg",
       "PackagePath": "staticwebassets\\assets\\image\\products\\cart-product-1.jpg"
     },
@@ -361,28 +381,12 @@
       "PackagePath": "staticwebassets\\assets\\image\\products\\product-11.jpg"
     },
     {
-      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-12.jpg",
-      "PackagePath": "staticwebassets\\assets\\image\\products\\product-12.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-13.jpg",
-      "PackagePath": "staticwebassets\\assets\\image\\products\\product-13.jpg"
-    },
-    {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-2.jpg",
       "PackagePath": "staticwebassets\\assets\\image\\products\\product-2.jpg"
     },
     {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-3.jpg",
       "PackagePath": "staticwebassets\\assets\\image\\products\\product-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-4.jpg",
-      "PackagePath": "staticwebassets\\assets\\image\\products\\product-4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-5.jpg",
-      "PackagePath": "staticwebassets\\assets\\image\\products\\product-5.jpg"
     },
     {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-6.jpg",
@@ -401,6 +405,10 @@
       "PackagePath": "staticwebassets\\assets\\image\\products\\product-9.jpg"
     },
     {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-details-1 - Copy.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\products\\product-details-1 - Copy.jpg"
+    },
+    {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-details-1.jpg",
       "PackagePath": "staticwebassets\\assets\\image\\products\\product-details-1.jpg"
     },
@@ -409,12 +417,28 @@
       "PackagePath": "staticwebassets\\assets\\image\\products\\product-details-2.jpg"
     },
     {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-details-3 - Copy (2).jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\products\\product-details-3 - Copy (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-details-3 - Copy - Copy.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\products\\product-details-3 - Copy - Copy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-details-3 - Copy.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\products\\product-details-3 - Copy.jpg"
+    },
+    {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-details-3.jpg",
       "PackagePath": "staticwebassets\\assets\\image\\products\\product-details-3.jpg"
     },
     {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-details-4.jpg",
       "PackagePath": "staticwebassets\\assets\\image\\products\\product-details-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-details-5 - Copy.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\products\\product-details-5 - Copy.jpg"
     },
     {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\product-details-5.jpg",
@@ -427,6 +451,10 @@
     {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\js\\custom.js",
       "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
     },
     {
       "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\js\\plugins.js",

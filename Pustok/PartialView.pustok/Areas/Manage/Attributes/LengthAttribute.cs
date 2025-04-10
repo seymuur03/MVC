@@ -12,13 +12,17 @@ namespace PartialView.pustok.Areas.Manage.Attributes
         }
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
+            List<IFormFile> _files = new List<IFormFile>();
+            if(value is List<IFormFile>files)
+                _files = files;
             if(value is IFormFile file)
+                _files.Add(file);
+            foreach (var _file in _files)
             {
-                if (file.Length >_length)
-                {
-                    return new ValidationResult("File Lenght is so big");
-                }
+                    if (_file.Length > _length)
+                        return new ValidationResult("File Lenght is so big");
             }
+           
             return ValidationResult.Success;
         }
     }

@@ -1,0 +1,27 @@
+﻿@model Book
+<div class="container">
+    <div class="row justify-content-center">
+       <div>Book Id : <strong>@Model.Id</strong</div> 
+       <div>Book Name : <strong>@Model.Title</strong> </div>
+       <div>Book Description : <strong>@Model.Description</strong>  </div>
+       <div>Book Price : <strong>@Model.Price</strong>  </div>
+       <div>Book Product Code : <strong>@Model.PCode</strong>  </div>
+       <div>Book Discount Percentage : <strong>@Model.Discount (%)</strong> </div>
+       <div>Book Created Date : <strong>@Model.CreatedDate</strong> </div>
+       <div>Book Updated Date : <strong>@Model.UpdateDate</strong> </div>
+       <div>Book Rate : <strong>@Model.Rate</strong> </div>
+       <div>Book Author Name : <strong>@Model.Author.Name</strong> </div>
+       <div>Book Genre Name : <strong>@Model.Genre.Name</strong> </div>
+       <div>Book's Main Image : <img width="150" height="150" src="~/assets/image/products/@Model.BookImages.FirstOrDefault(b=>b.Status==true).ImgName" alt="" /> </div> 
+       <div>Book's Hover Image : <img width="150" height="150" src="~/assets/image/products/@Model.BookImages.FirstOrDefault(b=>b.Status==false).ImgName" alt="" /> </div> 
+       <div>Book's Other Images : 
+           @foreach (var bImage in Model.BookImages.Where(bi=>bi.Status==null).ToList())
+            {
+                <img width="150" height="150" src="~/assets/image/products/@bImage.ImgName" alt="" />
+            }
+       </div> 
+    </div>
+    <div class="btn btn-outline-primary">
+        <a asp-controller="Book" asp-action="index">Go Back</a>
+    </div>
+</div>
