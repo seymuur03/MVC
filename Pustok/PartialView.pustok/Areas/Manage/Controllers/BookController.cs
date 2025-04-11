@@ -13,7 +13,7 @@ using PartialView.pustok.Services;
 namespace PartialView.pustok.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    //[Authorize]
+    [Authorize(Roles = "Admin")]
     public class BookController : Controller
     {
         private readonly PustokDbContext _pustokDbContext;

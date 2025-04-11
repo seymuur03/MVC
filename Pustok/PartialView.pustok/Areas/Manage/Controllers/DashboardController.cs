@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace PartialView.pustok.Areas.Manage.Controllers
 {
     [Area("Manage")]
-   // [Authorize]
+    [Authorize(Roles = "Admin")]
     public class DashboardController : Controller
     {
         

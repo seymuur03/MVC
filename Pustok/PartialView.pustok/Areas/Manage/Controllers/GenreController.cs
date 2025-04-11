@@ -8,7 +8,7 @@ using PartialView.pustok.Models;
 namespace PartialView.pustok.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    //[Authorize]
+    [Authorize(Roles = "Admin")]
     public class GenreController(PustokDbContext _pustokDbContext) : Controller
     {
         public IActionResult Index(int page=1,int take=2)

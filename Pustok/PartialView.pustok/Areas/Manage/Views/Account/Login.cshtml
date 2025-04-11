@@ -1,4 +1,6 @@
-﻿@{
+﻿@using PartialView.pustok.ViewModels
+@model AdminLoginVm
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -43,17 +45,18 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user">
+                                    <form method="post" class="user">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                   id="exampleInputEmail" aria-describedby="emailHelp"
+                                            <input asp-for="UserName"  class="form-control form-control-user"
                                                    placeholder="Enter Username...">
+                                            <span asp-validation-for="UserName" class="text-danger"></span>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                   id="exampleInputPassword" placeholder="Password">
+                                            <input asp-for="Password" class="form-control form-control-user"
+                                                 placeholder="Enter Password" >
+                                            <span asp-validation-for="Password" class="text-danger"></span>
                                         </div>
-                                        <div class="form-group">
+                                        @* <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">
                                                 <label class="custom-control-label" for="customCheck">
@@ -61,23 +64,22 @@
                                                     Me
                                                 </label>
                                             </div>
-                                        </div>
-                                        <button href="index.html" class="btn btn-primary btn-user btn-block">
+                                        </div> *@
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">
                                             Login
                                         </button>
                                         <hr>
                                         
                                     </form>
                                     <div class="text-danger" asp-validation-summary="ModelOnly">
-
                                     </div>
                                     <hr>
-                                    <div class="text-center">
+                                    @* <div class="text-center">
                                         <a class="small" href="forgot-password.html">Forgot Password?</a>
                                     </div>
                                     <div class="text-center">
                                         <a class="small" href="register.html">Create an Account!</a>
-                                    </div>
+                                    </div> *@
                                 </div>
                             </div>
                         </div>
@@ -99,6 +101,13 @@
 
     <!-- Custom scripts for all pages-->
     <script src="~/manage/assets/js/sb-admin-2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" integrity="sha512-xq+Vm8jC94ynOikewaQXMEkJIOBp7iArs3IhFWSWdRT3Pq8wFz46p+ZDFAR7kHnSFf+zUv52B3prRYnbDRdgog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+   @*  @section scripts {
+        @Html.Partial("ValidationPartialView")
+    } *@
 
 </body>
 

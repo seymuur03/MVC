@@ -9,7 +9,8 @@ namespace PartialView.pustok.Controllers
 {
 	public class AccountController(
 		UserManager<AppUser> userManager,
-		SignInManager<AppUser> signInManager) : Controller
+		SignInManager<AppUser> signInManager,
+		RoleManager<IdentityRole>roleManager) : Controller
 	{
 		public IActionResult Register()
 		{
@@ -91,5 +92,17 @@ namespace PartialView.pustok.Controllers
 			return RedirectToAction("Index", "Home");
 		}
 
+        public async Task<IActionResult> UserProfile()
+        {
+            var user = await userManager.FindByNameAsync(User.Identity.Name);
+            return Json(user);
+        }
+
+        public async Task<IActionResult> CreateRole()
+		{
+			await roleManager.CreateAsync(new IdentityRole() { Name = "Member" });
+			await roleManager.CreateAsync(new IdentityRole() { Name = "Admin" });
+			return Content("Role Created");
+		}
 	}
 }

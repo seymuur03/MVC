@@ -7,7 +7,7 @@ using PartialView.pustok.ViewModels;
 namespace PartialView.pustok.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    //[Authorize]
+    [Authorize(Roles ="Admin")]
     public class AccountController(UserManager<AppUser>userManager,
         SignInManager<AppUser>signInManager) : Controller
     {
@@ -18,8 +18,14 @@ namespace PartialView.pustok.Areas.Manage.Controllers
             user.UserName = "admin";
             user.FullName = "admin admin";
             user.Email = "admin@gmail.com";
-            var result = await userManager.CreateAsync(user,"_Admin03");
-            return View(result);
+            var result = await userManager.CreateAsync(user,"_Admin1903");
+            if (result.Succeeded)
+            {
+                var roleResult = await userManager.AddToRoleAsync(user, "Admin");
+
+                
+            }
+            return Json(result);
         }
         [AllowAnonymous]
         public IActionResult Login()
@@ -30,7 +36,7 @@ namespace PartialView.pustok.Areas.Manage.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(AdminLoginVm adminLoginVm)
         {
-            if (ModelState.IsValid) 
+            if (!ModelState.IsValid) 
                 return View();
             var user = await userManager.FindByNameAsync(adminLoginVm.UserName);
             if(user is null)
@@ -38,7 +44,7 @@ namespace PartialView.pustok.Areas.Manage.Controllers
                 ModelState.AddModelError("","invalid username or password");
                 return View();
             }
-            var passW = await userManager.CheckPasswordAsync(user, adminLoginVm.Password);
+            var passW = await userManager.CheckPasswordAsync(user, adminLoginVm.Password);  
             if (!passW)
             {
                 ModelState.AddModelError("", "invalid username or password");
@@ -46,8 +52,8 @@ namespace PartialView.pustok.Areas.Manage.Controllers
             }
             await signInManager.SignInAsync(user, false); //sessiona useri atir,false = remember me
 
-             
-            //var result = await signInManager.CheckPasswordSignInAsync(user,adminLoginVm.Password,false);     // hem passwordu yoxlayir hemde sessiona add edir
+
+            //var result = await signInManager.CheckPasswordSignInAsync(user, adminLoginVm.Password, false);     // hem passwordu yoxlayir hemde sessiona add edir
             //if (!result.Succeeded)
             //{
             //    ModelState.AddModelError("", "invalid username or password");

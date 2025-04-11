@@ -10,5 +10,6 @@ namespace PartialView.pustok.ViewModels
         [DataType(DataType.Password)]
         [MinLength(10)]
         public string Password { get; set; }
+
     }
 }
