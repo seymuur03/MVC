@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,7 @@ using PartialView.pustok.Services;
 namespace PartialView.pustok.Areas.Manage.Controllers
 {
     [Area("Manage")]
+    //[Authorize]
     public class BookController : Controller
     {
         private readonly PustokDbContext _pustokDbContext;

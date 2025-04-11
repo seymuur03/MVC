@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using PartialView.pustok.Models;
 
 namespace PartialView.pustok.DATA
 {
-    public class PustokDbContext:DbContext
+    public class PustokDbContext:IdentityDbContext<AppUser>
     {
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Feature> Features { get; set; }
@@ -14,6 +15,7 @@ namespace PartialView.pustok.DATA
         public DbSet<Tag> Tags { get; set; }
         public DbSet<BookTag> BookTags { get; set; }
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
 
         public PustokDbContext(DbContextOptions options) : base(options)
         {

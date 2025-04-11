@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PartialView.pustok.DATA;
+using PartialView.pustok.Models;
 using PartialView.pustok.Services;
 
 namespace PartialView.pustok
@@ -18,7 +20,19 @@ namespace PartialView.pustok
             });
             builder.Services.AddScoped<LayoutService>();
             builder.Services.Configure<IOptionPatternService>(builder.Configuration.GetSection("IoptionPattern"));
+            builder.Services.AddIdentity<AppUser, IdentityRole>(option =>
+            {
+                option.Password.RequireLowercase = true;
+                option.Password.RequireUppercase = true;
+                option.Password.RequireDigit = true;
+                option.Password.RequireNonAlphanumeric = true;
+                option.Password.RequiredLength = 10;
+                option.User.RequireUniqueEmail = true;
+                option.Lockout.MaxFailedAccessAttempts = 5;
+                option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+            }).AddEntityFrameworkStores<PustokDbContext>();
             var app = builder.Build();
+
 
             // Configure the HTTP request pipeline.
             //if (!app.Environment.IsDevelopment())
@@ -29,7 +43,8 @@ namespace PartialView.pustok
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseAuthentication(); //user sistemini yoxlayir
+            app.UseAuthorization(); // role ucundu
 
             app.MapControllerRoute(
               name: "areas",

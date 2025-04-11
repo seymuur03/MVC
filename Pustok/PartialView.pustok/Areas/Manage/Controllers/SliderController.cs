@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Options;
@@ -12,6 +13,7 @@ using PartialView.pustok.Services;
 namespace PartialView.pustok.Areas.Manage.Controllers
 {
     [Area("Manage")]
+    //[Authorize]
     public class SliderController : Controller
     {
 
