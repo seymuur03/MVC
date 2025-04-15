@@ -22,8 +22,6 @@ namespace PartialView.pustok.Areas.Manage.Controllers
             if (result.Succeeded)
             {
                 var roleResult = await userManager.AddToRoleAsync(user, "Admin");
-
-                
             }
             return Json(result);
         }
@@ -50,6 +48,15 @@ namespace PartialView.pustok.Areas.Manage.Controllers
                 ModelState.AddModelError("", "invalid username or password");
                 return View();
             }
+
+            if (!await userManager.IsInRoleAsync(user, "Admin"))
+            {
+                ModelState.AddModelError("", "invalid username or password");
+                return View();
+            }
+
+
+
             await signInManager.SignInAsync(user, false); //sessiona useri atir,false = remember me
 
 
@@ -61,11 +68,11 @@ namespace PartialView.pustok.Areas.Manage.Controllers
             //}
             return RedirectToAction("Index", "Dashboard");
         }
-
+        
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
-            return RedirectToAction("Login", "Account");
+            return RedirectToAction("Login", "Account","Manage");
         }
 
         public IActionResult UserProfile()

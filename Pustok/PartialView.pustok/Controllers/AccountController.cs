@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PartialView.pustok.Models;
 using PartialView.pustok.ViewModels;
 using PartialView.pustok.ViewModels.LoginingToUserPanel;
 using PartialView.pustok.ViewModels.Registering;
+using PartialView.pustok.ViewModels.UserAccountDetailsVM;
+using PartialView.pustok.ViewModels.UserProfileViewModel;
 
 namespace PartialView.pustok.Controllers
 {
@@ -45,8 +48,9 @@ namespace PartialView.pustok.Controllers
 				}
 				return View();
 			}
+            await userManager.AddToRoleAsync(user, "Member");
 
-			return View();
+			return RedirectToAction("Login", "Account");
 		}
 
 		public IActionResult Login()
@@ -82,20 +86,38 @@ namespace PartialView.pustok.Controllers
 				ModelState.AddModelError("", "invalid username or password");
 				return View();
 			}
-			
+
+			if (!await userManager.IsInRoleAsync(user,"Member"))
+			{
+                ModelState.AddModelError("", "invalid username or password");
+                return View();
+            }
+
 			return RedirectToAction("Index", "Home");
 		}
-
-		public async Task<IActionResult> Logout()
+        [Authorize(Roles = "Member")]
+        public async Task<IActionResult> Logout()
 		{
 			await signInManager.SignOutAsync();
 			return RedirectToAction("Index", "Home");
 		}
-
-        public async Task<IActionResult> UserProfile()
+		[Authorize(Roles ="Member")]
+        public async Task<IActionResult> Profile()
         {
             var user = await userManager.FindByNameAsync(User.Identity.Name);
-            return Json(user);
+			if (user == null) 
+				return NotFound();
+			UserUpdateProfileVm userUpdateProfileVm = new UserUpdateProfileVm()
+			{
+				FullName = user.FullName,
+				Email = user.Email,
+				UserName = user.UserName,
+			};
+			UserProfileVm userProfilevm = new()
+			{
+				UserUpdateProfileVm = userUpdateProfileVm
+			};
+            return View(userProfilevm);
         }
 
         public async Task<IActionResult> CreateRole()
