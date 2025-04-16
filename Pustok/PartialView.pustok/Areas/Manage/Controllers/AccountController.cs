@@ -32,7 +32,7 @@ namespace PartialView.pustok.Areas.Manage.Controllers
         }
         [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Login(AdminLoginVm adminLoginVm)
+        public async Task<IActionResult> Login(AdminLoginVm adminLoginVm,string returnUrl)
         {
             if (!ModelState.IsValid) 
                 return View();
@@ -66,7 +66,7 @@ namespace PartialView.pustok.Areas.Manage.Controllers
             //    ModelState.AddModelError("", "invalid username or password");
             //    return View();
             //}
-            return RedirectToAction("Index", "Dashboard");
+            return returnUrl is not null ? Redirect(returnUrl) : RedirectToAction("Index", "Dashboard");
         }
         
         public async Task<IActionResult> Logout()
@@ -74,8 +74,7 @@ namespace PartialView.pustok.Areas.Manage.Controllers
             await signInManager.SignOutAsync();
             return RedirectToAction("Login", "Account","Manage");
         }
-
-        public IActionResult UserProfile()
+		public IActionResult UserProfile()
         {
             var user = HttpContext.User; //sistemde user varsa dolu olur 
             return Json(user.Identity);

@@ -1,5 +1,5 @@
 ﻿@model UserUpdateProfileVm
-<form action="#">
+<form method="post">
 	<div class="row">
 		<div class="col-lg-6 col-12  mb--30">
 			<label asp-for="FullName">Full Name :</label>
@@ -44,3 +44,6 @@
 		</div>
 	</div>
 </form>
+<div class="text-danger" asp-validation-summary="ModelOnly">
+
+</div>

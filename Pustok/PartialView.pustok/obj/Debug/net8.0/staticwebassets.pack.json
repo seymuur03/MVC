@@ -7885,6 +7885,10 @@
       "PackagePath": "staticwebassets\\manage\\assets\\vendor\\jquery\\jquery.slim.min.map"
     },
     {
+      "Id": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\templates\\resetPassword.html",
+      "PackagePath": "staticwebassets\\templates\\resetPassword.html"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PartialView.pustok.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

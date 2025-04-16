@@ -20,12 +20,12 @@
 					<!-- My Account Tab Menu Start -->
 					<div class="col-lg-3 col-12">
 						<div class="myaccount-tab-menu nav" role="tablist">
-							<a href="#dashboad" class="active" data-bs-toggle="tab">
+							<a href="#dashboad" class="@(ViewBag.Tab == "dashboard"?"active":"")" data-bs-toggle="tab">
 								<i class="fas fa-tachometer-alt"></i>
 								Dashboard
 							</a>
-							<a href="#orders" data-bs-toggle="tab"><i class="fa fa-cart-arrow-down"></i> Orders</a>
-							<a href="#account-info" data-bs-toggle="tab">
+							<a href="#orders" class="@(ViewBag.Tab == "orders"?"active":"")" data-bs-toggle="tab"><i class="fa fa-cart-arrow-down"></i> Orders</a>
+							<a href="#account-info" class="@(ViewBag.Tab == "accountdetails"?"active":"")" data-bs-toggle="tab">
 								<i class="fa fa-user"></i> Account
 								Details
 							</a>
@@ -37,7 +37,7 @@
 					<div class="col-lg-9 col-12 mt--30 mt-lg--0">
 						<div class="tab-content" id="myaccountContent">
 							<!-- Single Tab Content Start -->
-							<div class="tab-pane fade show active" id="dashboad" role="tabpanel">
+							<div class="tab-pane fade @(ViewBag.Tab == "dashboard" ? "show active" : "")" id="dashboad" role="tabpanel">
 								<div class="myaccount-content">
 									<h3>Dashboard</h3>
 									<div class="welcome mb-20">
@@ -56,7 +56,7 @@
 							</div>
 							<!-- Single Tab Content End -->
 							<!-- Single Tab Content Start -->
-							<div class="tab-pane fade" id="orders" role="tabpanel">
+							<div class="tab-pane fade @(ViewBag.Tab == "orders" ? "show active" : "")" id="orders" role="tabpanel">
 								<div class="myaccount-content">
 									<h3>Orders</h3>
 									<div class="myaccount-table table-responsive text-center">
@@ -103,11 +103,11 @@
 							</div>
 							<!-- Single Tab Content End -->
 							<!-- Single Tab Content Start -->
-							<div class="tab-pane fade" id="account-info" role="tabpanel">
+							<div class="tab-pane fade @(ViewBag.Tab == "accountdetails" ? "show active" : "")" id="account-info" role="tabpanel">
 								<div class="myaccount-content">
 									<h3>Account Details</h3>
 									<div class="account-details-form">
-										@Html.Partial("AccountDetailsPartialView",Model.UserUpdateProfileVm);
+										@Html.Partial("AccountDetailsPartialView",Model.UserUpdateProfileVm)
 									</div>
 								</div>
 							</div>
@@ -120,3 +120,8 @@
 		</div>
 	</div>
 </div>
+
+@section scripts
+{
+	@Html.Partial("ValidationPartialView")
+}

@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\views\\shared\\accountdetailspartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\views\\shared\\accountdetailspartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\wwwroot\\templates\\resetpassword.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\wwwroot\\templates\\resetpassword.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\viewmodels\\useraccountdetailsvm\\userupdateprofilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\viewmodels\\useraccountdetailsvm\\userupdateprofilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\viewmodels\\forgotresetpassword\\resetpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\viewmodels\\forgotresetpassword\\resetpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\viewmodels\\userprofileviewmodel\\userprofilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\viewmodels\\userprofileviewmodel\\userprofilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\viewmodels\\forgotresetpassword\\forgotpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\viewmodels\\forgotresetpassword\\forgotpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,66 +43,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountDetailsPartialView.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Shared\\AccountDetailsPartialView.cshtml",
-              "RelativeDocumentMoniker": "PartialView.pustok\\Views\\Shared\\AccountDetailsPartialView.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Shared\\AccountDetailsPartialView.cshtml",
-              "RelativeToolTip": "PartialView.pustok\\Views\\Shared\\AccountDetailsPartialView.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACoAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T11:23:56.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Account\\Profile.cshtml",
-              "RelativeDocumentMoniker": "PartialView.pustok\\Views\\Account\\Profile.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Account\\Profile.cshtml",
-              "RelativeToolTip": "PartialView.pustok\\Views\\Account\\Profile.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T11:15:01.448Z",
+              "Title": "resetPassword.html",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\templates\\resetPassword.html",
+              "RelativeDocumentMoniker": "PartialView.pustok\\wwwroot\\templates\\resetPassword.html",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\templates\\resetPassword.html",
+              "RelativeToolTip": "PartialView.pustok\\wwwroot\\templates\\resetPassword.html",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAAAIcAAACAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-16T16:20:38.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserProfileVm.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\ViewModels\\UserProfileViewModel\\UserProfileVm.cs",
-              "RelativeDocumentMoniker": "PartialView.pustok\\ViewModels\\UserProfileViewModel\\UserProfileVm.cs",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\ViewModels\\UserProfileViewModel\\UserProfileVm.cs",
-              "RelativeToolTip": "PartialView.pustok\\ViewModels\\UserProfileViewModel\\UserProfileVm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T10:52:47.276Z",
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "PartialView.pustok\\Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "PartialView.pustok\\Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-16T13:15:34.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserUpdateProfileVm.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\ViewModels\\UserAccountDetailsVM\\UserUpdateProfileVm.cs",
-              "RelativeDocumentMoniker": "PartialView.pustok\\ViewModels\\UserAccountDetailsVM\\UserUpdateProfileVm.cs",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\ViewModels\\UserAccountDetailsVM\\UserUpdateProfileVm.cs",
-              "RelativeToolTip": "PartialView.pustok\\ViewModels\\UserAccountDetailsVM\\UserUpdateProfileVm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAgAAAA",
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "PartialView.pustok\\Views\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "PartialView.pustok\\Views\\Account\\ResetPassword.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-16T13:15:17.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ForgotPasswordVm.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\ViewModels\\ForgotResetPassword\\ForgotPasswordVm.cs",
+              "RelativeDocumentMoniker": "PartialView.pustok\\ViewModels\\ForgotResetPassword\\ForgotPasswordVm.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\ViewModels\\ForgotResetPassword\\ForgotPasswordVm.cs",
+              "RelativeToolTip": "PartialView.pustok\\ViewModels\\ForgotResetPassword\\ForgotPasswordVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T10:51:50.632Z",
+              "WhenOpened": "2025-04-16T13:13:03.665Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ResetPasswordVm.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\ViewModels\\ForgotResetPassword\\ResetPasswordVm.cs",
+              "RelativeDocumentMoniker": "PartialView.pustok\\ViewModels\\ForgotResetPassword\\ResetPasswordVm.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\ViewModels\\ForgotResetPassword\\ResetPasswordVm.cs",
+              "RelativeToolTip": "PartialView.pustok\\ViewModels\\ForgotResetPassword\\ResetPasswordVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T13:10:02.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "PartialView.pustok\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Controllers\\AccountController.cs",
               "RelativeToolTip": "PartialView.pustok\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAA5wG8AAAAcAAAA",
+              "ViewState": "AQIAAMIAAAAAAAAAAAAUwNEAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T10:41:24.515Z",
+              "WhenOpened": "2025-04-16T13:04:10.04Z",
               "EditorCaption": ""
             }
           ]

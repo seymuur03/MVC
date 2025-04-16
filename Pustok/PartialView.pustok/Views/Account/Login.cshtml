@@ -19,6 +19,10 @@
 								   placeholder="Enter your password">
 							<span asp-validation-for="Password" class="text-danger"></span>
 						</div>
+						<div>
+							<a asp-action="forgotpassword" asp-controller="account" class="text-info text-decoration-underline">Forgot password ?</a>
+                        </div>
+
 						<div class="col-md-12 col-12 mb--15 d-flex" >
 							<label asp-for="RememberMe"></label>
 							<input style="width:20px;height:20px;margin-left:10px"   asp-for="RememberMe" >
@@ -33,6 +37,7 @@
 							</span><br />
 							<a asp-action="register" asp-controller="account" class="btn btn-outlined">Register</a>
 						</div>
+                        
 					</div>
 				</div>
 			</form>
