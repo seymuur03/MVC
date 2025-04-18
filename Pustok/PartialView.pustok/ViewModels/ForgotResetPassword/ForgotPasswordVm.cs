@@ -8,5 +8,6 @@ namespace PartialView.pustok.ViewModels.ForgotResetPassword
 		[EmailAddress]
 		[DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+        public string UserName { get; set; }
     }
 }

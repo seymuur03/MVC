@@ -13,13 +13,20 @@ using PartialView.pustok.ViewModels.UserAccountDetailsVM;
 using PartialView.pustok.ViewModels.UserProfileViewModel;
 using MailKit.Security;
 using MailKit.Net.Smtp;
+using PartialView.pustok.ViewModels.ConfirmEmail;
+using PartialView.pustok.Services;
+using Microsoft.CodeAnalysis.Options;
+using PartialView.pustok.Settings;
+using Microsoft.Extensions.Options;
 
 namespace PartialView.pustok.Controllers
 {
 	public class AccountController(
 		UserManager<AppUser> userManager,
 		SignInManager<AppUser> signInManager,
-		RoleManager<IdentityRole> roleManager) : Controller
+		RoleManager<IdentityRole> roleManager,
+		EmailService emailService,
+		IOptions<EmailSetting> emailSetting) : Controller
 	{
 		public IActionResult Register()
 		{
@@ -45,6 +52,12 @@ namespace PartialView.pustok.Controllers
 				UserName = registerVm.UserName
 			};
 
+			if (registerVm.Password.ToLower() == registerVm.UserName.ToLower())
+			{
+                ModelState.AddModelError("", "Password must be differ from username");
+                return View();
+            }
+
 			var passW = await userManager.CreateAsync(user, registerVm.Password);
 			if (!passW.Succeeded)
 			{
@@ -54,9 +67,20 @@ namespace PartialView.pustok.Controllers
 				}
 				return View();
 			}
+
 			await userManager.AddToRoleAsync(user, "Member");
 
-			return RedirectToAction("Login", "Account");
+            var token = await userManager.GenerateEmailConfirmationTokenAsync(user);
+            var url = Url.Action("VerificationEmail", "Account", new { email = user.Email, token = token, }, Request.Scheme);
+
+            using StreamReader streamReader = new StreamReader("wwwroot/templates/VerifyEmail.html");
+            string body = await streamReader.ReadToEndAsync();
+            body = body.Replace("{{url}}", url);
+            body = body.Replace("{{username}}", user.FullName);
+
+            emailService.SendEmail(user.Email, "ConfirmAccount", body, "fatalizadaanar@gmail.com", "vrea jmhh khwd wmmk",emailSetting.Value);
+
+            return RedirectToAction("Login", "Account");
 		}
 
 		public IActionResult Login()
@@ -81,7 +105,13 @@ namespace PartialView.pustok.Controllers
 				}
 			}
 
-			var result = await signInManager.PasswordSignInAsync(user, loginVm.Password, loginVm.RememberMe, true);
+            if (!user.EmailConfirmed)
+            {
+                ModelState.AddModelError("", "Confirm email adress");
+                return View();
+            }
+
+            var result = await signInManager.PasswordSignInAsync(user, loginVm.Password, loginVm.RememberMe, true);
 			if (result.IsLockedOut)
 			{
 				ModelState.AddModelError("", "try some time later");
@@ -189,7 +219,9 @@ namespace PartialView.pustok.Controllers
 		{
 			if (!ModelState.IsValid) 
 				return NotFound();
-			var user = await userManager.FindByEmailAsync(forgotPasswordVm.Email);
+			
+            var user = await userManager.FindByEmailAsync(forgotPasswordVm.Email);
+			
 			
 			if (user == null|| !await userManager.IsInRoleAsync(user,"Member"))
 			{
@@ -199,22 +231,13 @@ namespace PartialView.pustok.Controllers
 			var token = await userManager.GeneratePasswordResetTokenAsync(user);
 			var url = Url.Action("ResetPassword", "Account", new { email = user.Email, token = token, },Request.Scheme);
 
-			var email = new MimeMessage();
-			email.From.Add(MailboxAddress.Parse("fatalizadaanar@gmail.com"));
-			email.To.Add(MailboxAddress.Parse("fatalizadaanar@gmail.com"));
-			email.Subject = "ResetPassword";
+			
 			using StreamReader streamReader = new StreamReader("wwwroot/templates/resetPassword.html");
 			string body = await streamReader.ReadToEndAsync(); 
 			body = body.Replace("{{url}}", url);
 			body = body.Replace("{{username}}", user.FullName);
-            email.Body = new TextPart(TextFormat.Html) { Text = body };
+            emailService.SendEmail(user.Email, "ResetPassword", body, "fatalizadaanar@gmail.com", "vrea jmhh khwd wmmk",emailSetting.Value);
 
-
-            using var smtp = new SmtpClient();
-			smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-			smtp.Authenticate("fatalizadaanar@gmail.com", "vrea jmhh khwd wmmk");
-			smtp.Send(email);
-			smtp.Disconnect(true);
 			return RedirectToAction("Index","Home");
 		}
         public IActionResult ResetPassword()
@@ -244,5 +267,18 @@ namespace PartialView.pustok.Controllers
 			}
             return RedirectToAction("Login","Account");
         }
+
+		public async Task<IActionResult> VerificationEmail(VerifyEmailVm verifyEmailVm)
+		{
+			if(verifyEmailVm.Email is null || verifyEmailVm.Token is null)
+				return NotFound();
+			var user = await userManager.FindByEmailAsync(verifyEmailVm.Email);
+			if (user == null)
+				return NotFound();
+			var resultConfirm = userManager.ConfirmEmailAsync(user,token:verifyEmailVm.Token).Result;
+			if (!resultConfirm.Succeeded)
+				return NotFound();
+			return RedirectToAction("Login","Account");
+		}
     }
 }
