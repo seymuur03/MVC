@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using PartialView.pustok.DATA;
+using PartialView.pustok.Services;
+using PartialView.pustok.Settings;
 using PartialView.pustok.ViewModels.BookFolder;
 
 namespace PartialView.pustok.Controllers

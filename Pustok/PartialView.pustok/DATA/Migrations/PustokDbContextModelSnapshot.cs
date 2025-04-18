@@ -469,6 +469,28 @@ namespace PartialView.pustok.Migrations
                     b.ToTable("Sliders");
                 });
 
+            modelBuilder.Entity("PartialView.pustok.Models.Subscribers", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FullName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Subscribers");
+                });
+
             modelBuilder.Entity("PartialView.pustok.Models.Tag", b =>
                 {
                     b.Property<int>("Id")

@@ -4,11 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using NuGet.Common;
 using PartialView.pustok.Controllers;
 using PartialView.pustok.DATA;
 using PartialView.pustok.Helpers;
 using PartialView.pustok.Models;
 using PartialView.pustok.Services;
+using PartialView.pustok.Settings;
 
 namespace PartialView.pustok.Areas.Manage.Controllers
 {
@@ -18,10 +20,15 @@ namespace PartialView.pustok.Areas.Manage.Controllers
     {
         private readonly PustokDbContext _pustokDbContext;
         private readonly IWebHostEnvironment _webHostEnvironment;
-        public BookController(PustokDbContext pustokDbContext, IWebHostEnvironment webHostEnvironment)
+        private readonly EmailService emailService;
+        private readonly IOptions<EmailSetting> options;
+        public BookController(PustokDbContext pustokDbContext, IWebHostEnvironment webHostEnvironment, EmailService _emailService, IOptions<EmailSetting> _options)
         {
             _pustokDbContext = pustokDbContext;
             _webHostEnvironment = webHostEnvironment;
+            emailService = _emailService;
+            options = _options;
+
         }
         public IActionResult Index(int page = 1, int take = 2)
         {
@@ -95,6 +102,13 @@ namespace PartialView.pustok.Areas.Manage.Controllers
 
             _pustokDbContext.Books.Add(book);
             _pustokDbContext.SaveChanges();
+            var url = Url.Action("Detail", "Book", new { area = "", id =book.Id }, Request.Scheme);
+            var body = $"<a href='{url}' > New book </a>'";
+            var emails = _pustokDbContext.Subscribers.Select(s=>s.Email).ToList();
+            foreach (var email in emails)
+            {
+                emailService.SendEmail(email,"New Book", body,"fatalizadaanar@gmail.com", "vrea jmhh khwd wmmk",options.Value);
+            }
 
             return RedirectToAction("Index");
         }
