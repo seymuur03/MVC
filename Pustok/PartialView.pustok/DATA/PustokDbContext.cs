@@ -17,6 +17,8 @@ namespace PartialView.pustok.DATA
         public DbSet<Setting> Settings { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<Subscribers> Subscribers { get; set; }
+        public DbSet<BookComment> BookComments { get; set; }
+        public DbSet<DbBasket> DbBaskets { get; set; }
 
         public PustokDbContext(DbContextOptions options) : base(options)
         {

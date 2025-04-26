@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\areas\\manage\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\areas\\manage\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\services\\layoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\services\\layoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\views\\basket\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\views\\basket\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\views\\shared\\_basketpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\views\\shared\\_basketpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|c:\\users\\hp\\onedrive\\desktop\\code academy\\backend\\all-tasks-02.03-den sonra\\pustok\\partialview.pustok\\viewmodels\\cart\\basketvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C799AB69-4FC4-4F53-88ED-C550FD9AB838}|PartialView.pustok\\PartialView.pustok.csproj|solutionrelative:partialview.pustok\\viewmodels\\cart\\basketvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +30,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "PartialView.pustok\\Controllers\\BasketController.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "PartialView.pustok\\Controllers\\BasketController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAowBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T11:23:51.043Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LayoutService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Services\\LayoutService.cs",
+              "RelativeDocumentMoniker": "PartialView.pustok\\Services\\LayoutService.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Services\\LayoutService.cs",
+              "RelativeToolTip": "PartialView.pustok\\Services\\LayoutService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA1wCEAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T12:50:53.552Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -31,41 +66,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "PartialView.pustok\\Controllers\\BookController.cs",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Controllers\\BookController.cs",
-              "RelativeToolTip": "PartialView.pustok\\Controllers\\BookController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T10:06:54.384Z",
-              "EditorCaption": ""
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Basket\\Index.cshtml",
+              "RelativeDocumentMoniker": "PartialView.pustok\\Views\\Basket\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Basket\\Index.cshtml",
+              "RelativeToolTip": "PartialView.pustok\\Views\\Basket\\Index.cshtml",
+              "ViewState": "AQIAADwBAAAAAAAAAAAswEIBAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T10:45:21.151Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "PartialView.pustok\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "PartialView.pustok\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAOMAAAAAAAAAAAAUwEkAAAB9AAAA",
+              "DocumentIndex": 4,
+              "Title": "BasketVm.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\ViewModels\\Cart\\BasketVm.cs",
+              "RelativeDocumentMoniker": "PartialView.pustok\\ViewModels\\Cart\\BasketVm.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\ViewModels\\Cart\\BasketVm.cs",
+              "RelativeToolTip": "PartialView.pustok\\ViewModels\\Cart\\BasketVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T09:55:32.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T11:52:45.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Areas\\Manage\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "PartialView.pustok\\Areas\\Manage\\Controllers\\BookController.cs",
-              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Areas\\Manage\\Controllers\\BookController.cs",
-              "RelativeToolTip": "PartialView.pustok\\Areas\\Manage\\Controllers\\BookController.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAowGgAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T09:50:45.961Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "_BasketPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Shared\\_BasketPartial.cshtml",
+              "RelativeDocumentMoniker": "PartialView.pustok\\Views\\Shared\\_BasketPartial.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\Views\\Shared\\_BasketPartial.cshtml",
+              "RelativeToolTip": "PartialView.pustok\\Views\\Shared\\_BasketPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T10:01:37.508Z"
             }
           ]
         }

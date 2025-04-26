@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MwaQbkyF5Nl2GWxH3mDXui63CB+XZlNS5gR7T+Iqtao=",
+  "Hash": "P/BLKC4Y4ZdtbnrfF7yDRd2C7BdOyKV6Tcii7BPDHt8=",
   "Source": "PartialView.pustok",
   "BasePath": "_content/PartialView.pustok",
   "Mode": "Default",
@@ -1651,6 +1651,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\home-side-promo.jpg"
     },
     {
+      "Identity": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\1c938e33-4a20-4a71-bfcd-38f2ac3fa934.jpg",
+      "SourceId": "PartialView.pustok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\",
+      "BasePath": "_content/PartialView.pustok",
+      "RelativePath": "assets/image/products/1c938e33-4a20-4a71-bfcd-38f2ac3fa934.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\image\\products\\1c938e33-4a20-4a71-bfcd-38f2ac3fa934.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\338f308c-6ae2-4756-863d-dff327275d57.jpg",
       "SourceId": "PartialView.pustok",
       "SourceType": "Discovered",
@@ -1687,6 +1706,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\4fed4322-613b-4837-a23a-ccbf854681fe.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\62652fae-5e36-4c52-b4f8-619596a4ff46.jpg",
+      "SourceId": "PartialView.pustok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\",
+      "BasePath": "_content/PartialView.pustok",
+      "RelativePath": "assets/image/products/62652fae-5e36-4c52-b4f8-619596a4ff46.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\image\\products\\62652fae-5e36-4c52-b4f8-619596a4ff46.jpg"
     },
     {
       "Identity": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\6fccd0db-32d6-48db-870d-c62ef931d39d.jpg",
@@ -1801,6 +1839,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\cart-product-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\cf5830a3-c952-426c-8fcd-831d7304539d.jpg",
+      "SourceId": "PartialView.pustok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\",
+      "BasePath": "_content/PartialView.pustok",
+      "RelativePath": "assets/image/products/cf5830a3-c952-426c-8fcd-831d7304539d.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\image\\products\\cf5830a3-c952-426c-8fcd-831d7304539d.jpg"
     },
     {
       "Identity": "C:\\Users\\Hp\\OneDrive\\Desktop\\Code Academy\\Backend\\All-Tasks-02.03-den sonra\\Pustok\\PartialView.pustok\\wwwroot\\assets\\image\\products\\de027165-eab5-47ea-bf6c-c083ed4eb457.jpg",

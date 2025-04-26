@@ -76,14 +76,25 @@
                     </div>
                     <div class="rating-widget">
                         <div class="rating-block">
-                            <span class="fas fa-star star_on"></span>
-                            <span class="fas fa-star star_on"></span>
-                            <span class="fas fa-star star_on"></span>
-                            <span class="fas fa-star star"></span>
-                            <span class="fas fa-star "></span>
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                if (Model.AverageRate >= i)
+                                {
+                                    <span class="fas fa-star star_on"></span>
+                                }
+                                else if (Model.AverageRate >=(decimal)i - 0.5m)
+                                {
+                                    <span class="fas fa-star-half-alt star_on"></span>
+                                }
+                                else
+                                {
+                                    <span class="far fa-star"></span>
+                                }
+                            }
+                           
                         </div>
                         <div class="review-widget">
-                            <a href="#">(1 Reviews)</a> <span>|</span>
+                            <a href="#">(@Model.TotalComments Reviews)</a> <span>|</span>
                             <a href="#">Write a review</a>
                         </div>
                     </div>
@@ -123,107 +134,91 @@
                 <li class="nav-item">
                     <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#tab-2" role="tab"
                        aria-controls="tab-2" aria-selected="true">
-                        REVIEWS (1)
+                        REVIEWS (@Model.TotalComments)
                     </a>
                 </li>
             </ul>
             <div class="tab-content space-db--20" id="myTabContent">
-                <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab1">
-                    <article class="review-article">
-                        <h1 class="sr-only">Tab Article</h1>
-                        <p>
-                            Fashion has been creating well-designed collections since 2010. The brand offers
-                            feminine designs delivering
-                            stylish
-                            separates and statement dresses which have since evolved into a full ready-to-wear
-                            collection in which every
-                            item is
-                            a
-                            vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful
-                            elegance and unmistakable
-                            signature
-                            style. All the beautiful pieces are made in Italy and manufactured with the greatest
-                            attention. Now Fashion
-                            extends
-                            to
-                            a range of accessories including shoes, hats, belts and more!
-                        </p>
-                    </article>
-                </div>
+                
                 <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab2">
                     <div class="review-wrapper">
-                        <h2 class="title-lg mb--20">1 REVIEW FOR AUCTOR GRAVIDA ENIM</h2>
-                        <div class="review-comment mb--20">
-                            <div class="avatar">
-                                <img src="image/icon/author-logo.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="rating-block mb--15">
-                                    <span class="ion-android-star-outline star_on"></span>
-                                    <span class="ion-android-star-outline star_on"></span>
-                                    <span class="ion-android-star-outline star_on"></span>
-                                    <span class="ion-android-star-outline"></span>
-                                    <span class="ion-android-star-outline"></span>
+                        <h2 class="title-lg mb--20">@Model.TotalComments REVIEWS FOR @Model.Book.Title </h2>
+                        @foreach (var bComment in Model.Book.BookComments)
+                        {
+                            <div class="review-comment mb--20">
+                                <div class="text">
+                                    <div class="rating-block mb--15">
+                                        @for (int i = 1; i <= 5; i++)
+                                        {
+                                            if (Model.AverageRate >= i)
+                                            {
+                                                <span class="fas fa-star star_on"></span>
+                                            }
+                                            else if (Model.AverageRate >= (decimal)i - 0.5m)
+                                            {
+                                                <span class="fas fa-star-half-alt star_on"></span>
+                                            }
+                                            else
+                                            {
+                                                <span class="far fa-star"></span>
+                                            }
+                                        }
+
+                                    </div>
+                                    <h6 class="author">
+                                        @bComment.AppUser.UserName – <span class="font-weight-400">@bComment.CreatedDate</span>
+                                    </h6>
+                                    <p>
+                                        @bComment.Text;
+                                    </p>
+                                    @if(User.Identity.IsAuthenticated){
+                                        if (User.Identity.Name == bComment.AppUser.UserName)
+                                        {
+                                            <a class="btn-outlined--primary" asp-action="deletecomment" asp-route-id="@bComment.Id"> Delete Comment </a>
+                                        }
+
+                                    }
                                 </div>
-                                <h6 class="author">
-                                    ADMIN – <span class="font-weight-400">March 23, 2015</span>
-                                </h6>
-                                <p>
-                                    Lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio
-                                    quis mi.
-                                </p>
                             </div>
-                        </div>
-                        <h2 class="title-lg mb--20 pt--15">ADD A REVIEW</h2>
-                        <div class="rating-row pt-2">
-                            <p class="d-block">Your Rating</p>
-                            <span class="rating-widget-block">
-                                <input type="radio" name="star" id="star1">
-                                <label for="star1"></label>
-                                <input type="radio" name="star" id="star2">
-                                <label for="star2"></label>
-                                <input type="radio" name="star" id="star3">
-                                <label for="star3"></label>
-                                <input type="radio" name="star" id="star4">
-                                <label for="star4"></label>
-                                <input type="radio" name="star" id="star5">
-                                <label for="star5"></label>
-                            </span>
-                            <form action="https://htmldemo.net/pustok/pustok/" class="mt--15 site-form ">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label for="message">Comment</label>
-                                            <textarea name="message" id="message" cols="30" rows="10"
-                                                      class="form-control"></textarea>
+                        }
+                      @if(!Model.HasComment){
+                            <h2 class="title-lg mb--20 pt--15">ADD A REVIEW</h2>
+                            <div class="rating-row pt-2">
+                                <p class="d-block">Your Rating</p>
+                                <span class="rating-widget-block">
+                                    <input form="commentForm" type="radio" value="5" asp-for="@Model.BookComment.Rate" id="star1">
+                                    <label for="star1"></label>
+                                    <input form="commentForm" type="radio" value="4" asp-for="@Model.BookComment.Rate" id="star2">
+                                    <label for="star2"></label>
+                                    <input form="commentForm" type="radio" value="3" asp-for="@Model.BookComment.Rate" id="star3">
+                                    <label for="star3"></label>
+                                    <input form="commentForm" type="radio" value="2" asp-for="@Model.BookComment.Rate" id="star4">
+                                    <label for="star4"></label>
+                                    <input form="commentForm" type="radio" value="1" asp-for="@Model.BookComment.Rate" id="star5">
+                                    <label for="star5"></label>
+                                </span>
+                                <form id="commentForm" asp-action="addcomment" class="mt--15 site-form ">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="message">Comment</label>
+                                                <input type="hidden" asp-for="@Model.BookComment.BookId" value="@Model.Book.Id" />
+                                                <input asp-for="@Model.BookComment.Text" id="message"
+                                                          class="form-control">
+                                                        <span class="text-danger" asp-validation-for="@Model.BookComment.Text"></span>  
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="submit-btn">
+                                                <button type="submit" class="btn btn-black">Post Comment</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label for="name">Name *</label>
-                                            <input type="text" id="name" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label for="email">Email *</label>
-                                            <input type="text" id="email" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label for="website">Website</label>
-                                            <input type="text" id="website" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="submit-btn">
-                                            <a href="#" class="btn btn-black">Post Comment</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                                </form>
+                            </div>
+
+                        }
                     </div>
                 </div>
             </div>
@@ -270,3 +265,8 @@
             </div>
         </div>
     </section>
+
+    @section scripts
+    {
+        @Html.Partial("ValidationPartialView")
+    }

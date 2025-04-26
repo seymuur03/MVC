@@ -305,6 +305,44 @@ namespace PartialView.pustok.Migrations
                     b.ToTable("Books");
                 });
 
+            modelBuilder.Entity("PartialView.pustok.Models.BookComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AppUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CommentStatus")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Rate")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("BookComments");
+                });
+
             modelBuilder.Entity("PartialView.pustok.Models.BookImage", b =>
                 {
                     b.Property<int>("Id")
@@ -358,6 +396,32 @@ namespace PartialView.pustok.Migrations
                     b.HasIndex("TagId");
 
                     b.ToTable("BookTags");
+                });
+
+            modelBuilder.Entity("PartialView.pustok.Models.DbBasket", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AppUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("DbBaskets");
                 });
 
             modelBuilder.Entity("PartialView.pustok.Models.Feature", b =>
@@ -585,6 +649,23 @@ namespace PartialView.pustok.Migrations
                     b.Navigation("Genre");
                 });
 
+            modelBuilder.Entity("PartialView.pustok.Models.BookComment", b =>
+                {
+                    b.HasOne("PartialView.pustok.Models.AppUser", "AppUser")
+                        .WithMany()
+                        .HasForeignKey("AppUserId");
+
+                    b.HasOne("PartialView.pustok.Models.Book", "Book")
+                        .WithMany("BookComments")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Book");
+                });
+
             modelBuilder.Entity("PartialView.pustok.Models.BookImage", b =>
                 {
                     b.HasOne("PartialView.pustok.Models.Book", "Book")
@@ -615,6 +696,28 @@ namespace PartialView.pustok.Migrations
                     b.Navigation("Tag");
                 });
 
+            modelBuilder.Entity("PartialView.pustok.Models.DbBasket", b =>
+                {
+                    b.HasOne("PartialView.pustok.Models.AppUser", "AppUser")
+                        .WithMany("DbBaskets")
+                        .HasForeignKey("AppUserId");
+
+                    b.HasOne("PartialView.pustok.Models.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Book");
+                });
+
+            modelBuilder.Entity("PartialView.pustok.Models.AppUser", b =>
+                {
+                    b.Navigation("DbBaskets");
+                });
+
             modelBuilder.Entity("PartialView.pustok.Models.Author", b =>
                 {
                     b.Navigation("Books");
@@ -622,6 +725,8 @@ namespace PartialView.pustok.Migrations
 
             modelBuilder.Entity("PartialView.pustok.Models.Book", b =>
                 {
+                    b.Navigation("BookComments");
+
                     b.Navigation("BookImages");
 
                     b.Navigation("BookTags");

@@ -49,6 +49,11 @@ namespace PartialView.pustok.Services
                 };
             });
             services.AddScoped<EmailService>();
+            services.AddHttpContextAccessor();
+            services.Configure<DataProtectionTokenProviderOptions>(options =>
+            {
+                options.TokenLifespan = TimeSpan.FromMinutes(5);
+            });
         }
     }
 

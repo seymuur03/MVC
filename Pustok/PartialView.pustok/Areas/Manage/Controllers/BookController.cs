@@ -103,7 +103,7 @@ namespace PartialView.pustok.Areas.Manage.Controllers
             _pustokDbContext.Books.Add(book);
             _pustokDbContext.SaveChanges();
             var url = Url.Action("Detail", "Book", new { area = "", id =book.Id }, Request.Scheme);
-            var body = $"<a href='{url}' > New book </a>'";
+            var body = $"<a href='{url}' > New book </a>";
             var emails = _pustokDbContext.Subscribers.Select(s=>s.Email).ToList();
             foreach (var email in emails)
             {

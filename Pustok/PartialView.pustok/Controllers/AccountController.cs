@@ -128,6 +128,8 @@ namespace PartialView.pustok.Controllers
 				ModelState.AddModelError("", "invalid username or password");
 				return View();
 			}
+			Response.Cookies.Delete("basket");
+
 
 			return returnUrl is not null? Redirect(returnUrl): RedirectToAction("Index", "Home");
 		}

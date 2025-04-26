@@ -29,4 +29,13 @@
             })
         $('#quickModal').modal('show');
     })
+
+    $('.addtobasket').click(function (e) {
+        e.preventDefault()
+        let url = $(this).attr('href')
+        fetch(url).then(response => response.text())
+            .then(data => {
+                $('.cart-block').html(data)
+            })
+    })
 });
